@@ -2,7 +2,7 @@
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="text-red-500">
            hollow
         </div>
   );

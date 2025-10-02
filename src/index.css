@@ -1,2 +1,8 @@
 /* tailwindcss */
-@import "tailwindcss/base";
+@import "tailwindcss";
+@plugin "daisyui";
+/* DaisyUI is configured as a Tailwind plugin in tailwind.config.js */
+
+
+
+
