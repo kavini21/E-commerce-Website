@@ -1,8 +1,12 @@
 /* tailwindcss */
-@import "tailwindcss";
+@import "tailwindcss/base";
 @plugin "daisyui";
-/* DaisyUI is configured as a Tailwind plugin in tailwind.config.js */
 
 
+/*google font inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@theme {
+    --font-inter: "Inter", sans-serif;
+}
 
