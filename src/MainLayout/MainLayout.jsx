@@ -1,4 +1,5 @@
 import { BrowserRouter, Route ,Routes} from "react-router";
+import Home from "../pages/Home/Home";
 import Register from "../pages/Auth/Register/Register";
 import Navbar from "../components/Navbar/Navbar";
 import Auth from "../pages/Auth/Auth";
@@ -32,6 +33,7 @@ const MainLayout = () => {
 
     </BrowserRouter>
   );
+  
 };
 
 export default MainLayout;
