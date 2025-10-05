@@ -1,4 +1,4 @@
-import{Armchair , Check, Heart, Info, Search, ShoppingCart, User} from "lucide-react";
+import{Armchair , Check, Heart, Info, Menu, Search, ShoppingCart, User} from "lucide-react";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
@@ -69,15 +69,18 @@ const Navbar = () => {
 
          {/*navbar bottom */}
 
-         <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white">
+         <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white border-b-[1px] border-[#e1e3e5]">
           <div className="lg:container flex items-center justify-between">
 
-            <div className="navbar_bottom_right">
+            <div className="navbar_bottom_left flex items-conter gap-8">
               <div className="dropdown dropdown-start">
-                      <div tabIndex={0} role="button" className="btn m-1">Click</div>
+                      <div tabIndex={0} role="button" className="btn m-1 flex items-center gap-5 capitalize"><Menu />all categories </div>
                       <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                        <li><a>Chair</a></li>
+                        <li><a>Pant</a></li>
+                         <li><a>Shirt</a></li>
+                          <li><a>T-Shirt</a></li>
+                           <li><a>T-Shirt</a></li>
                       </ul>
                     </div>
 
@@ -86,7 +89,7 @@ const Navbar = () => {
 
 
 
-            <nav className="flex items-center gap-6">
+            <nav className="flex items-center gap-8">
               <NavLink to='/' className='text-sm text-[#029fae] font-inter font-medium capitalize'>Home</NavLink>
               <NavLink className='text-sm text-[#636270] font-inter font-medium capitalize'>shop</NavLink>
               <NavLink className='text-sm text-[#636270] font-inter font-medium capitalize'>product</NavLink>
@@ -97,6 +100,13 @@ const Navbar = () => {
 
           </div>
 
+          <div className="navbar_bottom_right">
+            <p className="text-sm text-[#636270] font-inter font-normal capitalize"> contact: <span className="text-[#272343]">(000)sss-0111</span></p>
+
+
+          </div>
+
+
          </div>
          
 
@@ -104,8 +114,7 @@ const Navbar = () => {
 
 
 
-   {/*className='text-sm text-[#636270] font-inter font-medium capitalize'
-   to='/' className='text-sm text-[#029fae] font-inter font-medium capitalize'*/}
+   
 
 
       
