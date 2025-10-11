@@ -1,4 +1,4 @@
-import Banner from "../../components/Banner/banner";
+import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
   return (
@@ -6,12 +6,12 @@ const Home = () => {
 
   {/*banner component*/}
   {/* Reduced spacer so banner is closer to navbar */}
-  <div className="w-full min-h-[120px] bg-[#f0f2f3] flex items-center justify-center"></div>
+  <div className="w-full  bg-[#bebfc0] flex items-center justify-center"></div>
 
   <Banner />
 
     </div>
-  );
+  );    
 };
 
 export default Home;
