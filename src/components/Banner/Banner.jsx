@@ -40,9 +40,10 @@ const Banner =()=> {
     slidesToScroll: 1
     };
     return (
-        <div className="lg:container">
-            <div className="slider-container slider_container w-full h-full">
-                <Slider {...settings}>
+        <div className="w-full bg-[#f0f2f3]">
+            <div className="lg:container mx-auto">
+                <div className="slider-container slider_container w-full h-full">
+                    <Slider {...settings}>
 
          { products?.map((product) => (
             <div key={product?.id} className="banner_slide_item" >
@@ -73,7 +74,7 @@ const Banner =()=> {
 
       </Slider>
          </div>
-
+            </div>
         </div>
     );
 };
