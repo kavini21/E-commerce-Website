@@ -1,4 +1,4 @@
-import Banner from "../../components/Banner/banner";
+import Banner from "../../components/Banner/Banner";
 import Delivery from "../../components/Delivery/Delivery";
 import Brand from "../../components/Brand/Brand";
 import Features from "../../components/Features/Features";
