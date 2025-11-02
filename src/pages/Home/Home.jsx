@@ -2,12 +2,16 @@ import Banner from "../../components/Banner/Banner";
 import Delivery from "../../components/Delivery/Delivery";
 import Brand from "../../components/Brand/Brand";
 import Features from "../../components/Features/Features";
+import Categories from "../../components/Categories/Categories";
 
 const Home = () => {
   return (
     <div>
       {/*banner component*/}
-      <Banner />
+      <div className="w-full min-h-[850px] bg-[#f0f2f3] flex items-center justify-center rounded-b-3xl">
+        <Banner />
+      </div>
+ 
 
       {/*delivery component */}
       <div className="delivery_component w-full min-h-[150px] bg-white mb-20">
@@ -20,8 +24,13 @@ const Home = () => {
        </div>
 
        {/* features component */}
-       <div className="w-full flex items-center justify-center">
+       <div className="w-full flex items-center justify-center mb-[80px]">
         <Features />
+       </div>
+
+       {/* features component */}
+       <div className="w-full flex items-center justify-center">
+        <Categories />
        </div>
     </div>
   );    
